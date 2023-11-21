@@ -34,15 +34,4 @@ pipeline {
             }
         }
     }
- 
-    post {
-        failure {
-            stage('Error Handling') {
-                steps {
-                    echo 'Pipeline failed! Check the logs for more details.'
-                    // Additional error handling steps can be added here
-                }
-            }
-        }
-    }
 }
